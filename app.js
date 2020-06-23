@@ -25,6 +25,7 @@ app.use(express.urlencoded({extended: false}));
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/blog', require('./routes/blog'));
+app.use('/admin', require('./routes/admin'));
 
 
 
