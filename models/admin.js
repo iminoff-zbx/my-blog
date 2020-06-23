@@ -1,23 +1,16 @@
-const mongoose = require('mongoose');
 
-const blogSchema = new mongoose.Schema({
-    title: {
-        type: String,
-        required: true
-    },
-    subTitle: {
-        type: String,
-    },
-    body: {
-        type: String,
-        required: true
-    },
-    date: {
-        type: Date,
-        default: Date.now
-    }
-});
-
-const Blog = mongoose.model('Blog', blogSchema);
-
-module.exports = User;
+// const mongoose = require('mongoose');
+ 
+// const PostSchema = new mongoose.Schema({
+//     title: String,
+//     description: String,
+//     content: String,
+//     date: {
+//         type: Date,
+//         default: Date.now
+//     }
+// });
+ 
+// const Post = mongoose.model('Post', PostSchema);
+ 
+module.exports = Post;
